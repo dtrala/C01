@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dlascaba <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/13 22:43:51 by dlascaba          #+#    #+#             */
-/*   Updated: 2021/07/14 17:52:42 by dlascaba         ###   ########.fr       */
+/*   Created: 2021/07/14 17:40:18 by dlascaba          #+#    #+#             */
+/*   Updated: 2021/07/14 17:58:55 by dlascaba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-void	ft_putchar(char c)
+
+void	ft_rev_int_tab(int *tab, int size)
 {
-	write(1, &c, 1)
-}
-	void ft_putstr(char *str)
-{
-	char txt_char;
-	while (true)
+	int	index;
+	int	reverse;
+
+	index = 0;
+	while (index < size)
 	{
-		txt_char = *str;
-		if (txt_char == '\0')
-		{
-			break ;
-		}
-		ft_puchar(txt_char);
-		str++;
+		reverse = tab[index];
+		tab[index] = tab[size] - 1;
+		tab[size - 1] = reverse;
+		index++;
+		size--;
 	}
 }

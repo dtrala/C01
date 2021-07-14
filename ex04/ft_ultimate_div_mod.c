@@ -6,14 +6,14 @@
 /*   By: dlascaba <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 22:38:12 by dlascaba          #+#    #+#             */
-/*   Updated: 2021/07/13 22:42:56 by dlascaba         ###   ########.fr       */
+/*   Updated: 2021/07/14 17:48:52 by dlascaba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
 	int	div;
-	int mod;
+	int	mod;
 
 	div = *a / *b;
 	mod = *a % *b;

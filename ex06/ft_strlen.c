@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dlascaba <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/13 22:43:51 by dlascaba          #+#    #+#             */
-/*   Updated: 2021/07/14 17:52:42 by dlascaba         ###   ########.fr       */
+/*   Created: 2021/07/14 17:26:03 by dlascaba          #+#    #+#             */
+/*   Updated: 2021/07/14 17:56:52 by dlascaba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-void	ft_putchar(char c)
+
+int	ft_strlen(char *str)
+
 {
-	write(1, &c, 1)
-}
-	void ft_putstr(char *str)
-{
-	char txt_char;
-	while (true)
+	int	leng;
+
+	leng = 0;
+	while (*(str++) != '\0')
 	{
-		txt_char = *str;
-		if (txt_char == '\0')
-		{
-			break ;
-		}
-		ft_puchar(txt_char);
-		str++;
+		leng++;
 	}
+	return (leng);
 }
