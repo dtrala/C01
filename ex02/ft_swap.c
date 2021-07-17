@@ -6,7 +6,7 @@
 /*   By: dlascaba <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 21:34:57 by dlascaba          #+#    #+#             */
-/*   Updated: 2021/07/13 21:42:11 by dlascaba         ###   ########.fr       */
+/*   Updated: 2021/07/15 20:07:53 by dlascaba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ void	ft_swap(int *a, int *b)
 {
 	int	swp;
 
-	*swp = *a;
+	swp = *a;
 	*a = *b;
-	*b = *swp;
+	*b = swp;
 }

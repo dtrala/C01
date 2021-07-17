@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dlascaba <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: lhumbert <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/13 21:23:50 by dlascaba          #+#    #+#             */
-/*   Updated: 2021/07/14 20:30:57 by dlascaba         ###   ########.fr       */
+/*   Created: 2021/07/12 04:03:49 by lhumbert          #+#    #+#             */
+/*   Updated: 2021/07/12 04:05:07 by lhumbert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+void	ft_putstr(char *str);
+
+int	main(void)
 {
-	*nbr = 42;
+	ft_putstr("Hello 42 tkt meme pas");
 }

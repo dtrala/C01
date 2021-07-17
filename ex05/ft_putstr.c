@@ -6,24 +6,19 @@
 /*   By: dlascaba <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 22:43:51 by dlascaba          #+#    #+#             */
-/*   Updated: 2021/07/14 17:52:42 by dlascaba         ###   ########.fr       */
+/*   Updated: 2021/07/17 19:07:21 by dlascaba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-void	ft_putchar(char c)
+#include <unistd.h>
+int	ft_putchar(char c)
+
+void    ft_putstr(char *str)
 {
-	write(1, &c, 1)
-}
-	void ft_putstr(char *str)
-{
-	char txt_char;
-	while (true)
+	if (str)
 	{
-		txt_char = *str;
-		if (txt_char == '\0')
-		{
-			break ;
-		}
-		ft_puchar(txt_char);
-		str++;
-	}
+   		 while (*str != '\0')
+   		 {
+        write(1, str, 1);
+        str++;
+   		 }
 }

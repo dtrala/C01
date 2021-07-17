@@ -6,11 +6,11 @@
 /*   By: dlascaba <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 21:28:31 by dlascaba          #+#    #+#             */
-/*   Updated: 2021/07/13 21:34:06 by dlascaba         ###   ########.fr       */
+/*   Updated: 2021/07/14 20:34:33 by dlascaba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int *********nbr);
+void	ft_ultimate_ft(int *********nbr)
 {
 	*********nbr = 42;
 }
